@@ -31,12 +31,17 @@ export default function Details() {
                          <span
                              className={`${productDetails.in_stock ? "bg-green-200 text-green-600" : "bg-red-200 text-[#db4444]"} rounded-[20px] py-[2px] px-3 text-[14px] absolute right-4 top-4`}>{productDetails.in_stock ? "Sotuvda bor" : "Sotuvda yo'q"}</span>
                         <Image el={productDetails}/>
+                        
                     </div>
+                    
                     <div className={"col-span-3 flex flex-col justify-between"}>
                         <div className={"font-bold text-[27px]"}>
                             {productDetails.name}
                         </div>
+                        <p className={"text-[24px] font-medium text-[#00000]"}>sotuvchi :{productDetails.user?.username}</p>
+                         
                         <div className={"flex items-center gap-[20px]"}>
+                        
                         <p className={"text-[24px] font-medium text-[#DB4444]"}>{productDetails.price} so'm</p>
                             <Rating initialValue={5} readonly={true} size={20}/>
                         </div>
@@ -61,10 +66,7 @@ export default function Details() {
                             </div>
                             
                         </div>
-                        <div className={"flex items-center gap-[20px]"}>
-                        <p className={"text-[24px] font-medium text-[#00000]"}>sotuvchi :{productDetails.user?.username}</p>
-                           
-                        </div>
+                        
                     </div>
                     <div>
                         <button
