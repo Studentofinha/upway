@@ -62,7 +62,7 @@ export default function Details() {
                             
                         </div>
                         <div className={"flex items-center gap-[20px]"}>
-                        <p className={"text-[24px] font-medium text-[#00000]"}>author :{productDetails.user?.username}</p>
+                        <p className={"text-[24px] font-medium text-[#00000]"}>sotuvchi :{productDetails.user?.username}</p>
                            
                         </div>
                     </div>
