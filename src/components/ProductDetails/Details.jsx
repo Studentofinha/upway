@@ -22,6 +22,7 @@ export default function Details() {
             })
     })
 
+
     return (
         <div className={"pt-[100px]"}>
             <Wrapper>
@@ -39,6 +40,7 @@ export default function Details() {
                         <p className={"text-[24px] font-medium text-[#DB4444]"}>{productDetails.price} so'm</p>
                             <Rating initialValue={5} readonly={true} size={20}/>
                         </div>
+                       
                         <p className={"text-[#aaa]"}>{productDetails.description}</p>
                         <hr/>
                         <div className={"border-2 rounded-[5px] p-4 flex flex-col gap-4"}>
@@ -57,6 +59,11 @@ export default function Details() {
                                     <p>Bepul 30 kun yetkazib berish qaytariladi</p>
                                 </div>
                             </div>
+                            
+                        </div>
+                        <div className={"flex items-center gap-[20px]"}>
+                        <p className={"text-[24px] font-medium text-[#00000]"}>author :{productDetails.user?.username}</p>
+                           
                         </div>
                     </div>
                     <div>
