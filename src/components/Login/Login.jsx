@@ -1,7 +1,7 @@
 import Wrapper from "../Ui/Wrapper";
 import SignUpImage from "../../assets/dl.beatsnoop 1.svg"
 import {Link, useNavigate} from "react-router-dom";
-import {useEffect, useState} from "react";
+import { useState} from "react";
 import axios from "axios";
 import {enqueueSnackbar} from "notistack";
 

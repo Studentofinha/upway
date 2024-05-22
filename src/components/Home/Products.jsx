@@ -41,7 +41,7 @@ export default function Products() {
     };
 
     return (
-        <div className={"pt-[100px]"}>
+        <div className={"pt-[0px]"}>
             <Wrapper>
                 <div>
                     <div className={"flex items-center gap-[10px]"}>
