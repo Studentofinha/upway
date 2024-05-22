@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+main{
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign-up{
+    background-color: white;
+}
+
+.acount-item{
+    max-width: 1200px;
+    height: 700px;
+    display: flex;
+    column-gap: 130px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.acount-img{
+    width: 800px;
+    height: 600px;
+}
+
+.creat-account h4{
+    font-size: 36px;
+    color: #000;
+    font-weight: 500;
+}
+
+.p-text{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 24px 0 30px;
+}
+
+.user-box input{
+    width: 370px;
+    height: 32px;
+    border: none;
+    opacity: 0.5;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.user-box input.error{
+    border-bottom: 2px solid red;
+}
+
+.user-box input.valid{
+    border-bottom: 2px solid green;
+}
+
+.signup-btn{
+    width: 370px;
+    height: 56px;
+    border-radius: 4px;
+    background: var(--Button2, #DB4444);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    margin: 40px 0 16px;
+}
+
+.signup-btn:hover{
+    background-color: #000;
+    color: white;
+    transition: 0.3s;
+}
+
+.signup-btn2{
+    width: 370px;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    font-size: 16px;
+    font-weight: 400;
+    background: none;
+    position: absolute;
+}
+
+.btn2 img{
+    position: absolute;
+    z-index: 1;
+    padding: 15px 0 0 40px;
+}
+
+.already-account{
+    max-width: 250px;
+    margin: 90px auto 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.already-account p{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.already-account a{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+    color: #000;
+}

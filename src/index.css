@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    /* background-color: white; */
+}
+
 svg.star-svg {
     display: inline;
     vertical-align: -2px;
