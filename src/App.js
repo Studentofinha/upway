@@ -5,11 +5,15 @@ import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
+import Contact from "./components/contact/contact.js"
+import About from "./components/about/about.js"
 
 function App() {
     return (
         <Router>
             <Routes>
+               <Route path='/contact' element={<Contact/>}/>
+                <Route path='/about' element={<About/>}/>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/product/:id" element={<ProductDetails />} />
                 <Route path="/cart" element={<Cart />} />
