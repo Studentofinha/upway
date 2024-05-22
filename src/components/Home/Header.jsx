@@ -12,6 +12,15 @@ export default function Header() {
             <Wrapper>
                 <div className={"flex items-center justify-between"}>
                     <div className={"font-bold text-[34px]"}>UPWAY</div>
+                           <ul className={"flex gap-[35px] ml-[300px]"}>
+           <li><Link to='/'>Bosh sahifa</Link></li>
+            <li><Link to='/contact'>Kontakt</Link></li>
+            <li><Link to='/about'>Biz haqimizda</Link></li>
+        </ul>
+        <form  action="">
+            <input className={"w-[240px] h-[38px] bg-[#f5f5f5] outline-0 rounded-[4px] border-[none] pl-[20px] text-[12px]"} type="text" placeholder="Siz nimani izlayapsiz?" />
+            
+        </form>
                     <div className={"flex items-center gap-[30px]"}>
                         <div className={"relative"}>
                             <img src={Cart} alt={"Cart"} className={"cursor-pointer"}
