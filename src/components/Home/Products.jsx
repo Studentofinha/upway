@@ -9,6 +9,7 @@ import Image from "../Ui/Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import {enqueueSnackbar} from "notistack";
+import './Products.css'
 
 export default function Products() {
     const dispatch = useDispatch();
@@ -41,29 +42,29 @@ export default function Products() {
     };
 
     return (
-        <div className={"pt-[0px]"}>
+        <div>
             <Wrapper>
-                <div>
-                    <div className={"flex items-center gap-[10px]"}>
+                <div className='product'>
+                    <div className={" flex items-center gap-[10px]"}>
                         <p className={"h-[30px] w-[15px] rounded-[5px] bg-[#DB4444]"}></p>
-                        <p className={"text-[#DB4444] font-semibold text-[20px]"}>Mahsulotlarimiz</p>
+                        <p className={"text-[#DB4444] font-semibold text-[16px]"}>Mahsulotlarimiz</p>
                     </div>
-                    <div className={"text-[40px] font-medium mt-[20px]"}>Mahsulotlarimiz bilan tanishib chiqing</div>
-                    <div className={"grid grid-cols-4 gap-[20px] mt-[40px]"}>
+                    <div className={"text-[36px] font-medium mt-[20px]"}>Mahsulotlarimiz bilan tanishib chiqing</div>
+                    <div className={"product-item grid grid-cols-4 gap-[10px] mt-[40px]"}>
                         {
                             products.map((el, i) => {
                                 const isProductInCart = cartProducts.some((p) => p.id === el.id);
                                 return (
                                     <div key={i} onClick={() => handleNavigate(el.id)}
-                                         className={"cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300 hover:transition-all hover:duration-300 border rounded-[5px] pb-4"}>
+                                         className={"w-[280px] cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300 hover:transition-all hover:duration-300 border rounded-[5px] pb-4"}>
                                         <div className={"relative"}>
                                             <span
                                                 className={`${el.in_stock ? "bg-green-200 text-green-600" : "bg-red-200 text-[#db4444]"} rounded-[20px] py-[2px] px-3 text-[14px] absolute right-4 top-4`}>{el.in_stock ? "Sotuvda bor" : "Sotuvda yo'q"}</span>
                                             <Image el={el} />
                                         </div>
-                                        <p className={"font-semibold mt-4 px-3 text-[20px]"}>{el.name}</p>
+                                        <p className={"font-semibold mt-4 px-3 text-[18px]"}>{el.name}</p>
                                         <div className={"flex gap-[10px] mt-2 px-3"}>
-                                            <span className={"text-[#DB4444] font-medium text-[18px]"}>{el.price} so'm</span>
+                                            <span className={"text-[#DB4444] font-bold text-[18px]"}>{el.price} so'm</span>
                                             <Rating initialValue={5} readonly={true} size={20} />
                                         </div>
                                         <p className={"text-[#aaa] h-[80px] px-3 mt-2 text-[14px]"}>{el.description}</p>

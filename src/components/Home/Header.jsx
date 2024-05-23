@@ -3,17 +3,19 @@ import Cart from "../../assets/Cart1.svg";
 import {useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import { Link } from "react-router-dom";
+import './Header.css'
 
 export default function Header() {
     const navigator = useNavigate()
     const cartProducts = useSelector(state => state.cart.cartProducts)
 
     return (
-        <div className={"h-[70px] flex items-center border-b-2"}>
+        <div>
             <Wrapper>
-                <div className={"flex items-center justify-between"}>
+                {/* <nav className=""> */}
+                <div className={"navbar flex items-center justify-between"}>
                     <div className={"font-bold text-[34px]"}>UPWAY</div>
-                           <ul className={"flex gap-[35px] ml-[300px]"}>
+                           <ul className={"menu flex gap-[35px] ml-[300px]"}>
            <li><Link to='/'>Bosh sahifa</Link></li>
             <li><Link to='/contact'>Kontakt</Link></li>
             <li><Link to='/about'>Biz haqimizda</Link></li>
@@ -37,7 +39,9 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
+                {/* </nav> */}
             </Wrapper>
+            <hr class="hr-nav"/>
         </div>
     )
 }

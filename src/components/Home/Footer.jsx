@@ -8,8 +8,8 @@ export default function Footer() {
     return (
         <div className={"bg-black mt-[100px]"}>
             <Wrapper>
-                <div className={"py-[80px]"}>
-                    <div className={"grid grid-cols-3 gap-[100px] text-white place-items-center"}>
+                <div className={"w-[1200px] py-[30px] m-auto"}>
+                    <div className={"grid grid-cols-3 gap-[120px] text-white place-items-center"}>
                         <div className={"col-span-1 flex flex-col gap-4"}>
                             <div className={"text-[27px] font-bold"}>UPWAY</div>
                             <p className={"font-medium text-[20px]"}>Obuna bo'ling</p>

@@ -4,11 +4,11 @@ import Products from "../components/Home/Products";
 import Services from "../components/Home/Services";
 import Footer from "../components/Home/Footer";
 import Slider from "../components/slider/slider"
-
+import './HomePage.css'
 
 export default function HomePage() {
     return (
-        <div>
+        <div className="HomePage">
             <TopHeader/>
             <Header/>
             <Slider/>
