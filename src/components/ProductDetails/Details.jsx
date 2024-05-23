@@ -26,19 +26,17 @@ export default function Details() {
     return (
         <div className={"pt-[100px]"}>
             <Wrapper>
-                <div className={"grid grid-cols-6 gap-[40px]"}>
-                    <div className={"col-span-2 relative"}>
+                <div className={"w-[1200px] grid grid-cols-6 gap-[50px] m-auto"}>
+                    <div className={"w-[380px] col-span-2 relative"}>
                          <span
-                             className={`${productDetails.in_stock ? "bg-green-200 text-green-600" : "bg-red-200 text-[#db4444]"} rounded-[20px] py-[2px] px-3 text-[14px] absolute right-4 top-4`}>{productDetails.in_stock ? "Sotuvda bor" : "Sotuvda yo'q"}</span>
-                        <Image el={productDetails}/>
-                        
+                             className={`${productDetails.in_stock ? " bg-green-200 text-green-600" : "bg-red-200 text-[#db4444]"} rounded-[20px] py-[2px] px-3 text-[14px] absolute right-4 top-4`}>{productDetails.in_stock ? "Sotuvda bor" : "Sotuvda yo'q"}</span>
+                             <Image el={productDetails}/>
                     </div>
-                    
                     <div className={"col-span-3 flex flex-col justify-between"}>
                         <div className={"font-bold text-[27px]"}>
                             {productDetails.name}
                         </div>
-                        <p className={"text-[24px] font-medium text-[#00000]"}>sotuvchi :{productDetails.user?.username}</p>
+                        <p className={"text-[20px] font-medium text-[#00000]"}>Sotuvchi :{productDetails.user?.username}</p>
                          
                         <div className={"flex items-center gap-[20px]"}>
                         
@@ -46,9 +44,9 @@ export default function Details() {
                             <Rating initialValue={5} readonly={true} size={20}/>
                         </div>
                        
-                        <p className={"text-[#aaa]"}>{productDetails.description}</p>
-                        <hr/>
-                        <div className={"border-2 rounded-[5px] p-4 flex flex-col gap-4"}>
+                        <p className={"text-[#aaa] w-[550px]"}>{productDetails.description}</p>
+                        <hr className={"w-[530px]"}/>
+                        <div className={"w-[530px] border-2 rounded-[5px] p-4 flex flex-col gap-4"}>
                             <div className={"flex items-center gap-4"}>
                                 <img src={IconDelivery} alt={"IconDelivery"}/>
                                 <div className={"flex flex-col gap-[5px]"}>
@@ -70,7 +68,7 @@ export default function Details() {
                     </div>
                     <div>
                         <button
-                            className={"bg-[#DB4444] hover:bg-red-400 border-none py-4 px-8 text-white rounded-[5px] mt-[10px]"}>Savatchaga
+                            className={"bg-[#DB4444] hover:bg-red-400 border-none w-[150px] h-[50px] text-white rounded-[5px] mt-[10px]"}>Savatchaga
                             qo'shish
                         </button>
                     </div>

@@ -9,6 +9,7 @@ import EmptyCartImg from "../../assets/empty-cart-2130356-1800917.webp"
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
 import {enqueueSnackbar} from "notistack";
+import './Cart.css'
 
 export default function CartProducts() {
     const cartProducts = useSelector(state => state.cart.cartProducts);
@@ -46,9 +47,9 @@ export default function CartProducts() {
     }
 
     return (
-        <div className={"pt-[100px]"}>
+        <div className={" pt-[100px]"}>
             <Wrapper>
-                <div className={"grid grid-cols-3 gap-[50px]"}>
+                <div className={"w-[1200px] grid grid-cols-3 gap-[50px] m-auto"}>
                     {
                         cartProducts.length > 0 ?
                             <div className={"border rounded-[5px] p-4 col-span-2 flex flex-col gap-[50px]"}>
@@ -61,7 +62,7 @@ export default function CartProducts() {
                                             <Image el={el}/>
                                         </div>
                                         <div className={"col-span-2 flex flex-col"}>
-                                            <div className={"font-bold text-[27px]"}>
+                                            <div className={"font-bold text-[24px]"}>
                                                 {el.name}
                                             </div>
                                             <p className={"text-[24px] font-medium text-[#DB4444]"}>{el.price} so'm</p>
@@ -107,7 +108,7 @@ export default function CartProducts() {
                     {
                         cartProducts.length > 0 ?
                             <div className={"border rounded-[5px] p-4 h-[200px]"}>
-                                <div className={"text-[27px] font-bold"}>
+                                <div className={"text-[22px] font-bold"}>
                                     Umumiy narx: {totalPrice} so'm
                                 </div>
                                 <button onClick={handleOrder}

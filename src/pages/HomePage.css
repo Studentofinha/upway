@@ -1,3 +1,8 @@
-.HomePage{
+.HomePage, .ProductDetails, .Cart{
     background-color: white;
+}
+
+.ProductDetails{
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
 }

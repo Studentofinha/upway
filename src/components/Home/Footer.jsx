@@ -45,7 +45,7 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <p className={"text-[#aaa] text-center mt-[100px]"}>UPWAY 2024</p>
+                    <p className={"text-[#aaa] text-center mt-[50px]"}>UPWAY 2024</p>
                 </div>
             </Wrapper>
         </div>
