@@ -48,7 +48,7 @@ export default function LoginComponent() {
                 </div>
                 <div class="login">
                     <button type="submit" class="login-btn">Log in</button>
-                    <a href="">Parolni unutdingizmi?</a>
+                    <Link to='/signup'>Parolni unutdingizmi?</Link>
                 </div>
                 </form>
             </div>
