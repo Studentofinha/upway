@@ -4,6 +4,8 @@ import {Link, useNavigate} from "react-router-dom";
 import { useState} from "react";
 import axios from "axios";
 import {enqueueSnackbar} from "notistack";
+import './Login.css'
+import SignUpImages from "../../assets/dl.beatsnoop 1.svg"
 
 export default function LoginComponent() {
     const [login, setLogin] = useState("")
@@ -28,8 +30,31 @@ export default function LoginComponent() {
     }
 
     return (
-        <div>
-            <Wrapper>
+        <div className="Login">
+             <main>
+        <section class="acount-item">
+            <img class="acount-img" src={SignUpImages} alt=""/>
+            <div class="creat-account">
+                <h4>Kirish</h4>
+                <p class="p-text">Malumot kiriting</p>
+                <form action="">
+                <div class="user-box">
+                    <input type="email" placeholder="Email yoki telefon nomer" id="email" required/>
+                    <span id="error2"></span>
+                </div>
+                <div class="user-box">
+                    <input type="password" placeholder="Parol" id="password"  required/>
+                    <span id="error3"></span>
+                </div>
+                <div class="login">
+                    <button type="submit" class="login-btn">Log in</button>
+                    <a href="">Parolni unutdingizmi?</a>
+                </div>
+                </form>
+            </div>
+        </section>
+    </main>
+            {/* <Wrapper>
                 <div className={"h-screen flex items-center justify-center gap-[100px]"}>
                     <img src={SignUpImage} alt={"SignUpImage"} width={500}/>
                     <div className={"flex flex-col gap-[40px] justify-between"}>
@@ -54,7 +79,7 @@ export default function LoginComponent() {
                         </div>
                     </div>
                 </div>
-            </Wrapper>
+            </Wrapper> */}
         </div>
     )
 }

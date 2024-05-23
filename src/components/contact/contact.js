@@ -8,7 +8,7 @@ import "../../fontawesome-free-6.5.1-web/css/all.min.css"
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact">
       <TopHeader/>
       <Header/>
       <main className={"mt-[50px]"}>

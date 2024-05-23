@@ -11,7 +11,7 @@ import Header from "../Home/Header";
 
 function About() {
     return(
-        <div>
+        <div className="about-list">
             <TopHeader/>
       <Header/>
           <main className={"mt-[50px]"}>
