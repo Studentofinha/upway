@@ -3,7 +3,7 @@ import Header from "../components/Home/Header";
 import Products from "../components/Home/Products";
 import Services from "../components/Home/Services";
 import Footer from "../components/Home/Footer";
-import Slider from "../components/slider/slider"
+import Slider from "../components/slider/slider";
 import './HomePage.css'
 
 export default function HomePage() {

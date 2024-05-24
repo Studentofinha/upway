@@ -6,6 +6,9 @@ import {enqueueSnackbar} from "notistack";
 import {useState} from "react";
 import './sign-up.css'
 import icongoogle from '../../assets/Icon-Google.png'
+import TopHeader from "../Home/TopHeader";
+import Header from "../Home/Header";
+import Footer from "../Home/Footer";
 
 export default function SignUpComponent() {
     const [login, setLogin] = useState("")
@@ -27,9 +30,11 @@ export default function SignUpComponent() {
                 enqueueSnackbar("Ro'yxatdan o'tishda xatolik bor", {variant: "error"})
             })
     }
-    return (
+    return (    
         <div className="sign-up">
-            <Wrapper>
+            {/* <Wrapper> */}
+            <TopHeader/>
+            <Header/>
             <main>
         <section class="acount-item">
             <img class="acount-img" src={SignUpImage} alt=""/>
@@ -87,7 +92,8 @@ export default function SignUpComponent() {
                         </div>
                     </div>
                 </div> */}
-            </Wrapper>
+            {/* </Wrapper> */}
+            <Footer/>
         </div>
     )
 }

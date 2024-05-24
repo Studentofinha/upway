@@ -12,7 +12,6 @@ export default function Header() {
     return (
         <div>
             <Wrapper>
-                {/* <nav className=""> */}
                 <div className={"navbar flex items-center justify-between"}>
                     <div className={"font-bold text-[34px]"}>UPWAY</div>
                            <ul className={"menu flex gap-[35px] ml-[300px]"}>
@@ -39,7 +38,6 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
-                {/* </nav> */}
             </Wrapper>
             <hr class="hr-nav"/>
         </div>

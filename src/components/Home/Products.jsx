@@ -11,7 +11,9 @@ import { faCartArrowDown, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import {enqueueSnackbar} from "notistack";
 import './Products.css'
 
+
 export default function Products() {
+
     const dispatch = useDispatch();
     const cartProducts = useSelector((state) => state.cart.cartProducts);
     const navigate = useNavigate();
@@ -51,7 +53,7 @@ export default function Products() {
                     </div>
                     <div className={"text-[36px] font-medium mt-[20px]"}>Mahsulotlarimiz bilan tanishib chiqing</div>
                     <div className={"product-item grid grid-cols-4 gap-[10px] mt-[40px]"}>
-                        {
+                       {
                             products.map((el, i) => {
                                 const isProductInCart = cartProducts.some((p) => p.id === el.id);
                                 return (
@@ -64,9 +66,10 @@ export default function Products() {
                                         </div>
                                         <p className={"font-semibold mt-4 px-3 text-[18px]"}>{el.name}</p>
                                         <div className={"flex gap-[10px] mt-2 px-3"}>
-                                            <span className={"text-[#DB4444] font-bold text-[18px]"}>{el.price} so'm</span>
+                                            <span className={"text-[#DB4444] font-bold text-[18px]"}>{el.price} so'm </span>
                                             <Rating initialValue={5} readonly={true} size={20} />
                                         </div>
+                                        <p>{el.category}</p>
                                         <p className={"text-[#aaa] h-[80px] px-3 mt-2 text-[14px]"}>{el.description}</p>
                                         <div className={"flex justify-end mt-4 mr-4"}>
                                             {isProductInCart ? (

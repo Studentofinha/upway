@@ -6,6 +6,9 @@ import axios from "axios";
 import {enqueueSnackbar} from "notistack";
 import './Login.css'
 import SignUpImages from "../../assets/dl.beatsnoop 1.svg"
+import TopHeader from "../Home/TopHeader";
+import Header from "../Home/Header";
+import Footer from "../Home/Footer";
 
 export default function LoginComponent() {
     const [login, setLogin] = useState("")
@@ -31,6 +34,8 @@ export default function LoginComponent() {
 
     return (
         <div className="Login">
+            <TopHeader/>
+            <Header/>
              <main>
         <section class="acount-item">
             <img class="acount-img" src={SignUpImages} alt=""/>
@@ -80,6 +85,7 @@ export default function LoginComponent() {
                     </div>
                 </div>
             </Wrapper> */}
+            <Footer/>
         </div>
     )
 }
