@@ -38,7 +38,6 @@ export default function Details() {
                         </div>
                         <p className={"text-[20px] font-medium text-[#00000]"}>Sotuvchi
                             : {productDetails.user?.username}</p>
-                        <p className={"text-[20px] font-medium text-[#00000]"}>{productDetails.category}</p>
 
                         <div className={"flex items-center gap-[20px]"}>
                             <p className={"text-[24px] font-medium text-[#DB4444]"}>{productDetails.price} so'm</p>

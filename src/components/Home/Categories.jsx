@@ -23,11 +23,12 @@ export default function Categories() {
                     <p className={"h-[30px] w-[15px] rounded-[5px] bg-[#DB4444]"}></p>
                     <p className={"text-[#DB4444] font-semibold text-[16px]"}>Kategoriyalar</p>
                 </div>
-                <div className={"mt-[30px] flex items-center gap-[20px]"}>
+                <div className={"text-[36px] font-medium mt-[20px]"}>Turkum Bo'yicha Ko'rib Chiqish</div>
+                <div className={"mt-[30px] flex justify-between"}>
                     {
                         categories.map((el) => (
                             <div key={el.id} onClick={() => navigator(`/categories/${el.id}`)}
-                                 className={"bg-[#f5f5f5] rounded-[5px] p-4 hover:shadow-lg transition-all duration-300 hover:transition-all hover:duration-300 cursor-pointer border border-transparent hover:border hover:border-[#aaa]"}>
+                                 className={"w-[170px] h-[50px] pt-[12px] bg-[white] border-solid border-[black] rounded text-center text-[16px]   hover:shadow-lg transition-all duration-300 hover:transition-all hover:duration-300 cursor-pointer border border-transparent hover:border hover:border-[#aaa] hover:bg-[#DB4444] hover:text-white "}>
                                 {el.name}
                             </div>
                         ))
