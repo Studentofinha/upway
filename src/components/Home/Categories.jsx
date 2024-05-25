@@ -28,7 +28,7 @@ export default function Categories() {
                     {
                         categories.map((el) => (
                             <div key={el.id} onClick={() => navigator(`/categories/${el.id}`)}
-                                 className={"w-[170px] h-[50px] pt-[12px] bg-[white] border-solid border-[black] rounded text-center text-[16px]   hover:shadow-lg transition-all duration-300 hover:transition-all hover:duration-300 cursor-pointer border border-transparent hover:border hover:border-[#aaa] hover:bg-[#DB4444] hover:text-white "}>
+                                 className={"w-[170px] h-[50px] pt-[12px] bg-[white] border border-[black] rounded text-center text-[16px]   hover:shadow-lg transition-all duration-300 hover:transition-all hover:duration-300 cursor-pointer  hover:border hover:border-[#aaa] hover:bg-[#DB4444] hover:text-white "}>
                                 {el.name}
                             </div>
                         ))
