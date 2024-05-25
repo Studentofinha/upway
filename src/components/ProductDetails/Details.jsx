@@ -30,21 +30,21 @@ export default function Details() {
                     <div className={"w-[380px] col-span-2 relative"}>
                          <span
                              className={`${productDetails.in_stock ? " bg-green-200 text-green-600" : "bg-red-200 text-[#db4444]"} rounded-[20px] py-[2px] px-3 text-[14px] absolute right-4 top-4`}>{productDetails.in_stock ? "Sotuvda bor" : "Sotuvda yo'q"}</span>
-                             <Image el={productDetails}/>
+                        <Image el={productDetails}/>
                     </div>
                     <div className={"col-span-3 flex flex-col justify-between"}>
                         <div className={"font-bold text-[27px]"}>
                             {productDetails.name}
                         </div>
-                        <p className={"text-[20px] font-medium text-[#00000]"}>Sotuvchi :{productDetails.user?.username}</p>
+                        <p className={"text-[20px] font-medium text-[#00000]"}>Sotuvchi
+                            : {productDetails.user?.username}</p>
                         <p className={"text-[20px] font-medium text-[#00000]"}>{productDetails.category}</p>
-                         
+
                         <div className={"flex items-center gap-[20px]"}>
-                        
-                        <p className={"text-[24px] font-medium text-[#DB4444]"}>{productDetails.price} so'm</p>
+                            <p className={"text-[24px] font-medium text-[#DB4444]"}>{productDetails.price} so'm</p>
                             <Rating initialValue={5} readonly={true} size={20}/>
                         </div>
-                       
+
                         <p className={"text-[#aaa] w-[550px]"}>{productDetails.description}</p>
                         <hr className={"w-[530px]"}/>
                         <div className={"w-[530px] border-2 rounded-[5px] p-4 flex flex-col gap-4"}>
@@ -63,9 +63,9 @@ export default function Details() {
                                     <p>Bepul 30 kun yetkazib berish qaytariladi</p>
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
+
                     </div>
                     <div>
                         <button

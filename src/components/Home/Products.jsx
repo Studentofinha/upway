@@ -44,7 +44,7 @@ export default function Products() {
     };
 
     return (
-        <div>
+        <div className={"mt-[100px]"}>
             <Wrapper>
                 <div className='product'>
                     <div className={" flex items-center gap-[10px]"}>
@@ -69,8 +69,8 @@ export default function Products() {
                                             <span className={"text-[#DB4444] font-bold text-[18px]"}>{el.price} so'm </span>
                                             <Rating initialValue={5} readonly={true} size={20} />
                                         </div>
-                                        <p>{el.category}</p>
-                                        <p className={"text-[#aaa] h-[80px] px-3 mt-2 text-[14px]"}>{el.description}</p>
+                                        {/*<p>{el.category}</p>*/}
+                                        <p className={"text-[#aaa] h-[100px] px-3 mt-2 text-[14px]"}>{el.description}</p>
                                         <div className={"flex justify-end mt-4 mr-4"}>
                                             {isProductInCart ? (
                                                 <FontAwesomeIcon size={"xl"} icon={faCartArrowDown}

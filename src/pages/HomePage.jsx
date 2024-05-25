@@ -5,6 +5,7 @@ import Services from "../components/Home/Services";
 import Footer from "../components/Home/Footer";
 import Slider from "../components/slider/slider";
 import './HomePage.css'
+import Categories from "../components/Home/Categories";
 
 export default function HomePage() {
     return (
@@ -12,6 +13,7 @@ export default function HomePage() {
             <TopHeader/>
             <Header/>
             <Slider/>
+            <Categories/>
             <Products/>
             <Services/>
             <Footer/>
